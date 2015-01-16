@@ -1,4 +1,6 @@
 # Host
+
+```
 git clone https://github.com/awslabs/amazon-kinesis-client-python.git
 cd amazon-kinesis-client-python/
 mkdir vm
@@ -9,8 +11,11 @@ vagrant init ubuntu/trusty64
 #       owner: "vagrant", group: "vagrant"
 vagrant up
 vagrant ssh
+```
 
 # VM
+
+```
 sudo apt-get update
 sudo apt-get install openjdk-7-jre
 sudo apt-get install python-setuptools
@@ -28,3 +33,4 @@ python samples/sample_kinesis_wordputter.py --stream winton -w steve -w harrison
 chmod +x /home/vagrant/existence/samples/sample_kclpy_app.py
 `python samples/amazon_kclpy_helper.py --print_command \
     --java /usr/bin/java --properties samples/sample.properties`
+```
